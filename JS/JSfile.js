@@ -7,8 +7,14 @@ var jsonData = JSON.parse(request.responseText);
 //alert(jsonData);
 
 
-let url = 'https://raw.githubusercontent.com/mishelmishev/DentalManager/main/PriceListVOP.json';
+//let url = 'https://raw.githubusercontent.com/mishelmishev/DentalManager/main/PriceListVOP.json';
 function allPrices(){
+	var request = new XMLHttpRequest();
+	request.open("GET", "/data/file.json", false);
+	request.overrideMimeType("application/json");
+	request.send(null);
+	var jsonData = JSON.parse(request.responseText);
+	
 //fetch(url)
 //.then(res => res.json())
 //.then((out) => {
