@@ -1,3 +1,4 @@
+alert("check")
 var request = new XMLHttpRequest();
 request.open("GET","<data/file.json>", false);
 request.send(null);
