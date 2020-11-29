@@ -1,10 +1,10 @@
-alert("check")
+alert("check 2")
 var request = new XMLHttpRequest();
-request.open("GET","</data/file.json>", false);
+request.open("GET", "</data/file.json>", false);
+request.overrideMimeType("application/json");
 request.send(null);
-alert(JSON.parse(request.responseText))
-//var jsonData = JSON.parse(request.responseText);
-//alert(jsonData)
+var jsonData = JSON.parse(request.responseText);
+alert(jsonData);
 
 
 let url = 'https://raw.githubusercontent.com/mishelmishev/DentalManager/main/PriceListVOP.json';
