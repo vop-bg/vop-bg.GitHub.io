@@ -1,6 +1,6 @@
-alert("check2")
+alert("check3")
 var request = new XMLHttpRequest();
-request.open("GET","<data/file.json>", false);
+request.open("GET","</data/file.json>", false);
 request.send(null);
 alert(request.responseText)
 //var jsonData = JSON.parse(request.responseText);
