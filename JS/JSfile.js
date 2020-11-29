@@ -1,18 +1,18 @@
-alert("check 3")
+alert("check 4")
 var request = new XMLHttpRequest();
 request.open("GET", "data/file.json", false);
 request.overrideMimeType("application/json");
 request.send(null);
 var jsonData = JSON.parse(request.responseText);
-alert(jsonData);
+//alert(jsonData);
 
 
 let url = 'https://raw.githubusercontent.com/mishelmishev/DentalManager/main/PriceListVOP.json';
 function allPrices(){
-fetch(url)
-.then(res => res.json())
-.then((out) => {
-var PL=Object.keys(out);
+//fetch(url)
+//.then(res => res.json())
+//.then((out) => {
+var PL=Object.keys(jsonData);
 PL.forEach(myFunction1);
 
 function myFunction1(item, index) {
@@ -110,9 +110,6 @@ if(document.body.contains(document.getElementById('table'+pos))){
 }
 }
 
-	
-})
-
 }
 
 
@@ -165,10 +162,10 @@ var i;
 }
 
 function fChangeCurrency(){
-fetch(url)
-.then(res => res.json())
-.then((out) => {
-var PL=Object.keys(out);
+//fetch(url)
+//.then(res => res.json())
+//.then((out) => {
+var PL=Object.keys(jsonData);
 PL.forEach(myFunction2);
 
 	function myFunction2(item, index) {
@@ -186,7 +183,6 @@ PL.forEach(myFunction2);
 		}
 	}
 document.getElementById("currency").blur();
-})
 }
 
 
