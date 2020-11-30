@@ -3,13 +3,13 @@
 
 function allPrices(){
 	//Get JSON file from data folder
-alert("check 3")
+alert("check 4")
 var request = new XMLHttpRequest();
 request.open("GET", "data/file.json", false);
 request.overrideMimeType("application/json");
 request.send(null);
 var jsonData = JSON.parse(request.responseText);
-alert("E3000 - "+jsonData.E1000.EUR+" EUR")
+//alert("E3000 - "+jsonData.E1000.EUR+" EUR")
 	
 //let url = 'https://raw.githubusercontent.com/mishelmishev/DentalManager/main/PriceListVOP.json';	
 //fetch(url)
@@ -17,18 +17,18 @@ alert("E3000 - "+jsonData.E1000.EUR+" EUR")
 //.then((out) => {
 //var PL=Object.keys(out);
 var PL=Object.keys(jsonData);
-	alert(PL)
+	//alert(PL)
 PL.forEach(myFunction1);
 
 
 function myFunction1(item, index) {
-	alert(item)
+	//alert(item)
 	//var BGN=out[item].BGN;
 	var BGN=jsonData[item].BGN;
-	alert(BGN)
+	//alert(BGN)
 	var EUR=jsonData[item].EUR;
 	var MD=jsonData[item].MD;
-	var pos=out[item].pos;
+	var pos=jsonData[item].pos;
 	var cc=document.getElementById("currency").value
 
 	//var x = document.getElementById("id"+pos).nodeName;
