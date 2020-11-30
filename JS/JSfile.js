@@ -4,7 +4,7 @@ request.open("GET", "data/file.json", false);
 request.overrideMimeType("application/json");
 request.send(null);
 var jsonData = JSON.parse(request.responseText);
-//alert(jsonData);
+alert(jsonData.E1000.BGN);
 
 
 //let url = 'https://raw.githubusercontent.com/mishelmishev/DentalManager/main/PriceListVOP.json';
