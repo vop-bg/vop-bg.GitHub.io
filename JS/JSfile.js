@@ -17,10 +17,12 @@ var jsonData = JSON.parse(request.responseText);
 //.then((out) => {
 //var PL=Object.keys(out);
 var PL=Object.keys(jsonData);
+	alert(PL)
 PL.forEach(myFunction1);
 
-function myFunction1(item, index) {
 
+function myFunction1(item, index) {
+	alert(item)
 	//var BGN=out[item].BGN;
 	var BGN=jsonData[item].BGN;
 	var EUR=jsonData[item].EUR;
