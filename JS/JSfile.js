@@ -170,14 +170,6 @@ var i;
 }
 
 function fChangeCurrency(){
-//Get JSON file from data folder
-
-//var request = new XMLHttpRequest();
-//request.open("GET", "data/file.json", false);
-//request.overrideMimeType("application/json");
-//request.send(null);
-//var jsonData = JSON.parse(request.responseText);
-//alert("E1000 - "+jsonData.E1000.EUR+" EUR")
 	
 var PL=Object.keys(jsonData);
 PL.forEach(myFunction2);
@@ -303,7 +295,7 @@ function ffocuschangekeyboard(){
 //================== Audio  ==================//
 
 function fWorkoutSelectHaptic(){
-	document.getElementById("WorkoutSelectHaptic").src = document.getElementById("Base64_WorkoutSelectHaptic").innerHTML;
+	document.getElementById("WorkoutSelectHaptic").src = "UISounds/WorkoutSelect_Haptic.mp3";
 	document.getElementById("WorkoutSelectHaptic").play();
 }
 
