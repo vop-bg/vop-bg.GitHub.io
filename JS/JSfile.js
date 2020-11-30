@@ -4,25 +4,21 @@ request.open("GET", "data/file.json", false);
 request.overrideMimeType("application/json");
 request.send(null);
 var jsonData = JSON.parse(request.responseText);
-//alert(jsonData.E1000.BGN);
 
 
-//let url = 'https://raw.githubusercontent.com/mishelmishev/DentalManager/main/PriceListVOP.json';
+
 function allPrices(){
-	//var request = new XMLHttpRequest();
-	//request.open("GET", "/data/file.json", false);
-	//request.overrideMimeType("application/json");
-	//request.send(null);
-	//var jsonData = JSON.parse(request.responseText);
-	
+//let url = 'https://raw.githubusercontent.com/mishelmishev/DentalManager/main/PriceListVOP.json';	
 //fetch(url)
 //.then(res => res.json())
 //.then((out) => {
+//var PL=Object.keys(out);
 var PL=Object.keys(jsonData);
 PL.forEach(myFunction1);
 
 function myFunction1(item, index) {
 
+	//var BGN=out[item].BGN;
 	var BGN=jsonData[item].BGN;
 	var EUR=jsonData[item].EUR;
 	var MD=jsonData[item].MD;
@@ -168,9 +164,6 @@ var i;
 }
 
 function fChangeCurrency(){
-//fetch(url)
-//.then(res => res.json())
-//.then((out) => {
 var PL=Object.keys(jsonData);
 PL.forEach(myFunction2);
 
