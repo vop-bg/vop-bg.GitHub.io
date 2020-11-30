@@ -68,7 +68,7 @@ if(document.body.contains(document.getElementById('table'+pos))){
 	checkbox.setAttribute("id" , "myCheckbox"+pos);
 	checkbox.setAttribute("class" , "myCheckbox");
 	checkbox.setAttribute("form" , "myForm");
-	checkbox.onclick=(function(){fShowDiscount();CalculateDiscount();});
+	checkbox.onclick=(function(){fShowDiscount();CalculateDiscount();fWorkoutSelectHaptic();});
 
 	cell0.appendChild(checkbox);
 
