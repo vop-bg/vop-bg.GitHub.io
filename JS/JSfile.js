@@ -1,6 +1,6 @@
 
 //Get JSON file from data folder
-alert("check 5")
+//alert("check 5")
 var request = new XMLHttpRequest();
 request.open("GET", "data/file.json", false);
 request.overrideMimeType("application/json");
