@@ -1,13 +1,16 @@
-alert("check")
+
+
+
+function allPrices(){
+	//Get JSON file from data folder
+alert("check 2")
 var request = new XMLHttpRequest();
 request.open("GET", "data/file.json", false);
 request.overrideMimeType("application/json");
 request.send(null);
 var jsonData = JSON.parse(request.responseText);
-alert("E1000 - "+jsonData.E1000.EUR+" EUR")
-
-
-function allPrices(){
+//alert("E1000 - "+jsonData.E1000.EUR+" EUR")
+	
 //let url = 'https://raw.githubusercontent.com/mishelmishev/DentalManager/main/PriceListVOP.json';	
 //fetch(url)
 //.then(res => res.json())
@@ -164,6 +167,15 @@ var i;
 }
 
 function fChangeCurrency(){
+//Get JSON file from data folder
+//alert("check")
+var request = new XMLHttpRequest();
+request.open("GET", "data/file.json", false);
+request.overrideMimeType("application/json");
+request.send(null);
+var jsonData = JSON.parse(request.responseText);
+//alert("E1000 - "+jsonData.E1000.EUR+" EUR")
+	
 var PL=Object.keys(jsonData);
 PL.forEach(myFunction2);
 
