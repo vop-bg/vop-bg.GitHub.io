@@ -1,3 +1,13 @@
+function fPassword(){
+var inputPass, password;
+inputPass=prompt("Enter Password.");
+password=inputPass.toLowerCase();
+if(password!=="vopood"){
+alert("Wrong Password!!!")
+fPassword();
+}
+}
+
 
 //Get JSON file from data folder
 //alert("check 5")
