@@ -3,8 +3,8 @@ var inputPass, password;
 inputPass=prompt("Enter Password.");
 password=inputPass.toLowerCase();
 if(password!=="vopood"){
-alert("Wrong Password!!!")
-fPassword();
+//alert("Wrong Password!!!")
+//fPassword();
 }
 }
 
